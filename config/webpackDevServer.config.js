@@ -83,13 +83,13 @@ module.exports = function(proxy, allowedHost) {
     },
     public: allowedHost,
     proxy:{
-    	'/mi':{
-	    		target:'https://m.mi.com',
-	    		changeOrigin:true,
-	    		pathRewrite:{
-	    			'^/mi':''
-	    		}
-    	}
+//  	'/mi':{
+//	    		target:'https://m.mi.com',
+//	    		changeOrigin:true,
+//	    		pathRewrite:{
+//	    			'^/mi':''
+//	    		}
+//  	}
     },
     before(app, server) {
       if (fs.existsSync(paths.proxySetup)) {

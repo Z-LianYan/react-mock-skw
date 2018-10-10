@@ -1,6 +1,6 @@
 
 const state = {
-	
+	userInfo: null
 }
 
-export state
+export default state
