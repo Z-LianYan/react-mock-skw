@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//antd-mobile css
+import 'antd-mobile/dist/antd-mobile.css';
+
 import './stylesheets/main.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -8,6 +11,9 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 //rem
 import './modules/rem.js'
+
+//swiper css
+import 'swiper/dist/css/swiper.min.css'
 
 //引入post，get方法
 import './modules/axios-util'

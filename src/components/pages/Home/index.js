@@ -3,6 +3,9 @@
 import React, { Component } from 'react'
 import './index.scss'
 
+import NavBar from './NavBar'
+
+import Banner from './Banner'
 
 class Home extends Component{
 	constructor(props){
@@ -11,11 +14,13 @@ class Home extends Component{
 			
 		}
 	}
+
 	
 	render(){
 		return (
 			<div className='app-home'>
-				app-home
+				<NavBar/>
+				<Banner/>
 			</div>
 		)
 	}

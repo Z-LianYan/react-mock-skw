@@ -1,0 +1,13 @@
+
+@import '../../../../stylesheets/_base.scss'; 
+
+.home-nav-bar{
+    border-bottom: 0.01rem solid #ccc;
+    .swiper-slide{
+        display: inline-block;
+        width: auto;
+        padding: 0.14rem 0.2rem 0.26rem;
+        text-align: center;
+        position: relative;
+    }
+}

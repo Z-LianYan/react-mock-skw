@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import './index.scss'
 
+
+
 class BuyCar extends Component{
 	constructor(props) {
 		super(props)

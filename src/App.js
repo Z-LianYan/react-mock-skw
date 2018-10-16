@@ -4,6 +4,8 @@ import { Home, BuyCar, List, Mine } from './components/pages'
 
 import AppFooter from './components/commons/AppFooter'
 
+import { GroupCommons } from './modules/group'
+
 class App extends Component {
 	
 	constructor(props){
@@ -53,7 +55,8 @@ class App extends Component {
 	}
 	  
 	componentDidMount(){
-	  
+		this.props.getInitialUserInfo();
+		this.props.history.push('/')
 	}
 	  
 	shouldComponentUpdate(props){
@@ -72,4 +75,4 @@ App.defaultProps = {
 	]
 }
 
-export default withRouter(App);
+export default withRouter(GroupCommons(App));

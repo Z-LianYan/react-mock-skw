@@ -15,11 +15,11 @@ class Mine extends Component{
 		}
 	}
 	
-	checkLogin(){
-		let { userInfo, history } = this.props
+	checkLogin(props){
+		let { userInfo, history } =( props || this.props ) 
 		let { replace } = history
 		if( userInfo ){
-			replace('./mine/user')
+			replace('/mine/user')
 		}else{
 			replace('/mine/login')
 		}
@@ -27,6 +27,13 @@ class Mine extends Component{
 	
 	componentDidMount(){
 		this.checkLogin()
+	}
+	
+	componentWillReceiveProps(props){
+		let { pathname } = props.location
+		if( props.userInfo !== this.props.userInfo || pathname === '/mine' ){
+			this.checkLogin(props)
+		}
 	}
 	
 	
