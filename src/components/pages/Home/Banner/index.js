@@ -28,6 +28,10 @@ class Banner extends Component{
 		})
 	}
 
+
+
+
+
 	initialImgSwiper(){
 		new Swiper(this.imgSwiper,{
 			autoplay:{

@@ -22,6 +22,11 @@ class NavBar extends Component{
 		})
 	}
 
+	shouldComponentUpdate(props){
+		if(props.navs !== this.props.navs) return true
+		return false
+	}
+
 	componentDidMount(){
 		if(this.props.navs){
 			this.initialSwiper();
@@ -34,12 +39,7 @@ class NavBar extends Component{
 		})
 	}
 
-
-	componentDidUpdate(){
-		
-	}
-
-
+	componentDidUpdate(){}
 
 	renderItem(){
 		let { navs } = this.props

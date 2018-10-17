@@ -1,0 +1,39 @@
+@import '../../../../../stylesheets/_base.scss';
+.special {
+
+    .special-item {
+        background:#fff;
+        .banner-img-box {
+            height: 3.75rem;
+        }
+
+        .goods {
+            padding: 0.2rem;
+            .slide-img-box {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+            .title, .price {
+                padding-top: 0.24rem;
+                font-size: 12px;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                white-space:nowrap;
+                .normal {
+                    color: #ccc;
+                }
+                .color {
+                    color: $base-color;
+                }
+                .through {
+                    text-decoration: line-through;
+                }
+            }
+
+            .swiper-slide {
+                width: 1.8rem;
+                margin: 0px 5px;
+            }
+        }
+    }
+}

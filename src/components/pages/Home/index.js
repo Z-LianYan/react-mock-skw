@@ -7,6 +7,10 @@ import NavBar from './NavBar'
 
 import Banner from './Banner'
 
+import GoodsList from './GoodsList'
+
+
+
 class Home extends Component{
 	constructor(props){
 		super(props)
@@ -18,9 +22,10 @@ class Home extends Component{
 	
 	render(){
 		return (
-			<div className='app-home'>
+			<div className='page home'>
 				<NavBar/>
 				<Banner/>
+				<GoodsList/>
 			</div>
 		)
 	}
